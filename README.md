@@ -11,8 +11,11 @@ También, como administrador, se puede acceder a registrar nuevos productos y nu
 ### Herramientas utilizadas
 - Como servidor usé [XAMPP](https://www.apachefriends.org/es/index.html "Página oficial"), aunque se puede usar [WAMP Server](https://sourceforge.net/projects/wampserver/ "Link de descraga").
 - Como lenguaje Backend utilicé PHP 7 y DB MySQL. Ya integrados en los dos servidores anteriormente nombrados.
-- Para diseño web incorporé [*Bootstrap 4*](https://www.getbootstrap.com), pero una versión modificada llamada [*Bootswatch*](https://www.bootswatch.com) que solo cambia colores y ligeramente algunos tamaños.
+- Para diseño web incorporé [*Bootstrap 4*](https://www.getbootstrap.com), pero una versión modificada llamada [*Bootswatch*](https://www.bootswatch.com) que solo cambia colores y ligeramente algunos tamaños. :grin:
 
 [Mi Instagram](http://www.instagram.com/andiosuna20)
 
 [Mi Twitter](http://www.twitter.com/andyosuna6)
+
+:+1:
+:-1:
