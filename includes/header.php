@@ -21,7 +21,6 @@ for ($i = 0; $i < count($_SESSION['carrito']); $i++) {
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-	<!-- <link rel="stylesheet" type="text/css" href="css/all.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/bootswatch-sandstone.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<title>AndyTech</title>
@@ -37,6 +36,9 @@ for ($i = 0; $i < count($_SESSION['carrito']); $i++) {
 
 		<div class="collapse navbar-collapse" id="collapsibleNavId">
 			<div class="navbar-nav">
+				<div class="nav-item">
+					<a href="index.php" class="nav-link">Inicio</a>
+				</div>
 				<div class="nav-item">
 					<a href="listProd.php" class="nav-link">Productos</a>
 				</div>

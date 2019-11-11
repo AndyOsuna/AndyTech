@@ -1,7 +1,7 @@
 <?php
 include_once 'db.php';
 
-$cats = $mysql->query("SELECT * FROM `cat`");
+$cats = $mysql->query("SELECT * FROM `cats`");
 
 include_once './includes/header.php';
 ?>

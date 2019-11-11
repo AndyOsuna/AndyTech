@@ -4,17 +4,17 @@ include_once './db.php';
 if(isset($_POST['newCategory']))
 {
   $newCat = $_POST['newCategory'];
-  $mysql->query("INSERT INTO `cat` (`name`) VALUES ('$newCat')") or $_SESSION['error'] = "No se pudo guardar la nueva categoría. Hubo un error con la base de datos";
+  $mysql->query("INSERT INTO `cats` (`name`) VALUES ('$newCat')") or $_SESSION['error'] = "No se pudo guardar la nueva categoría. Hubo un error con la base de datos";
 }
 
 if(isset($_GET['delID']))
 {
   $id = $_GET['delID'];
-  $mysql->query("DELETE FROM `cat` WHERE `id` = $id");
+  $mysql->query("DELETE FROM `cats` WHERE `id` = $id");
   header("location: ". $_SERVER['PHP_SELF']);
 }
 
-$cats = $mysql->query("SELECT * FROM cat");
+$cats = $mysql->query("SELECT * FROM cats");
 
 include_once './includes/header.php';
 

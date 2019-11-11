@@ -2,7 +2,7 @@
 
 include_once 'db.php';
 
-$cats = $mysql->query("SELECT * FROM `cat`");
+$cats = $mysql->query("SELECT * FROM `cats`");
 
 if(isset($_GET['id'])) {
 	$id = $_GET['id'];

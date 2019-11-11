@@ -66,20 +66,33 @@ if (isset($_GET['id']) && isset($_GET['cantProd'])) {
   }
 }
 /* COMPRA REALIZADA */
-if (isset($_GET['comprado'])) { ?>
+if (isset($_GET['comprado'])) {
+  if (!isset($_SESSION['login'])) { ?>
+    
+    <div class="jumbotron bg-danger text-center text-white">
+      <h1 class="display-3">No se pudo concretar la compra</h1>
+      <p class="h3">Es necesario que esté logeado</p>
+      <hr class="my-2">
+      <p class="lead">
+        <a class="btn btn-outline-light btn-lg" role="button" href="login.php">Logearse</a>
+      </p>
+    </div>
 
-  <div class="jumbotron bg-info text-center">
-    <h1 class="display-1">Felicitaciones!</h1>
-    <p class="h1">Compra realizada</p>
-    <hr class="my-2">
-    <p class="lead">
-      <a class="btn btn-primary btn-lg" role="button" href="index.php">Seguir comprando</a>
-    </p>
-  </div>
+  <?php } else { ?>
 
-<?php } else { ?>
+    <div class="jumbotron bg-info text-center">
+      <h1 class="display-1">Felicitaciones!</h1>
+      <p class="h1">Compra realizada</p>
+      <hr class="my-2">
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" role="button" href="index.php">Seguir comprando</a>
+      </p>
+    </div>
 
-  <div class="container mt-5">
+  <?php }
+  } else { ?>
+
+  <div class="container-fluid mt-5">
     <div class="row">
       <div class="col-md-10 mx-auto">
         <table class="table table-light table-striped table-carrito">

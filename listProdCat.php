@@ -2,7 +2,7 @@
 include_once 'db.php';
 include_once 'includes/header.php';
 
-$cats = $mysql->query("SELECT * FROM cat");
+$cats = $mysql->query("SELECT * FROM `cats`");
 if ($mysql->error) $_SESSION['error'] = "Error al recuperar categorias de las Base de Datos";
 
 if (isset($_GET['cat'])) {

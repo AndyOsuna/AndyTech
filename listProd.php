@@ -27,12 +27,11 @@ include 'includes/header.php';
 			<?php unset($_SESSION['error']);
 			} ?>
 			<p class="h1 text-center">Productos</p>
-			<div class="form-inline">
+			<!-- <div class="form-inline">
 				<input type="text" id="search" class="search form-control text-center rounded-pill mb-3 mx-auto" placeholder="Buscá lo que quieras" />
-			</div>
+			</div> -->
 		</div>
 		<div class="products">
-			<!-- <div class="row"> -->
 
 			<?php $hayProductos = false;
 			while ($reg = $productos->fetch_object()) { ?>
@@ -58,7 +57,6 @@ include 'includes/header.php';
 			if (!$hayProductos) { ?>
 				<div class="alert alert-warning my-5 text-center">No hay productos</div>
 			<?php } ?>
-			<!-- </div> -->
 		</div>
 	</div>
 </div>
