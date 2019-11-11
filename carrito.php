@@ -29,12 +29,12 @@ function borrarDelCarrito($id, $cart)
   }
 }
 /* Vaciar todo el carrito */
-if(isset($_GET['vaciar'])){
+if (isset($_GET['vaciar'])) {
   $vaciar = $_GET['vaciar'];
-  
-  if($vaciar === "si") {
+
+  if ($vaciar === "si") {
     $_SESSION['carrito'] = [];
-    header("location: ". $_SERVER['PHP_SELF']);
+    header("location: " . $_SERVER['PHP_SELF']);
   }
 }
 
@@ -68,15 +68,14 @@ if (isset($_GET['id']) && isset($_GET['cantProd'])) {
 /* COMPRA REALIZADA */
 if (isset($_GET['comprado'])) { ?>
 
-<div class="jumbotron bg-info text-center">
-  <h1 class="display-1">Felicitaciones!</h1>
-  <p class="h1">Compra realizada</p>
-  <hr class="my-2">
-  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo odit odio similique minima, deleniti nostrum voluptas quasi necessitatibus doloribus esse! Ad reiciendis obcaecati modi facilis, deleniti dignissimos harum laborum officia!</p>
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" role="button" href="index.php">Seguir comprando</a>
-  </p>
-</div>
+  <div class="jumbotron bg-info text-center">
+    <h1 class="display-1">Felicitaciones!</h1>
+    <p class="h1">Compra realizada</p>
+    <hr class="my-2">
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" role="button" href="index.php">Seguir comprando</a>
+    </p>
+  </div>
 
 <?php } else { ?>
 
@@ -136,15 +135,15 @@ if (isset($_GET['comprado'])) { ?>
               <?php if (!isset($cartEmpty)) { ?>
                 <td>Total: $<?= $total ?></td>
                 <td><a href="<?= $_SERVER['PHP_SELF'] ?>?vaciar=si" class="btn btn-success">Vaciar carrito</a></td>
-                <?php } else { ?>
-                  <td></td>
-                  <td></td>
-                  <?php } ?>
+              <?php } else { ?>
+                <td></td>
+                <td></td>
+              <?php } ?>
             </tr>
           </tfoot>
         </table>
-        <?php if(!isset($cartEmpty)) { ?>
-        <a href="<?= $_SERVER['PHP_SELF'] ?>?comprado=1" class="btn btn-warning btn-lg ml-auto">Finalizar compra</a>
+        <?php if (!isset($cartEmpty)) { ?>
+          <a href="<?= $_SERVER['PHP_SELF'] ?>?comprado=1" class="btn btn-warning btn-lg ml-auto">Finalizar compra</a>
         <?php } ?>
       </div>
     </div>

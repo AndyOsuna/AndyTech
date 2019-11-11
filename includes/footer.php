@@ -9,15 +9,15 @@
 			<div class="col-md-2"></div>
 			<div class="col-md-4">
 				<p class="h3">Seguinos</p>
-				<ul class="nav flex-column">
+				<ul class="nav justify-content-around">
 					<li class="nav-item">
-						<a href="https://www.instagram.com/andiosuna20/" class="nav-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+						<a href="https://www.instagram.com/andiosuna20/" class="nav-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram ig"></i></a>
 					</li>
 					<li class="nav-item">
-						<a href="https://twitter.com/andyosuna6" class="nav-link" target="_blank" rel="noopener noreferrer">Twitter</a>
+						<a href="https://twitter.com/andyosuna6" class="nav-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter tt"></i></a>
 					</li>
 					<li class="nav-item">
-						<a href="https://www.youtube.com/channel/UC3w8ovQ0vfT_YVpkEtB1fMQ?view_as=subscriber" class="nav-link" target="_blank" rel="noopener noreferrer">Youtube</a>
+						<a href="https://www.youtube.com/channel/UC3w8ovQ0vfT_YVpkEtB1fMQ?view_as=subscriber" class="nav-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube yt"></i></a>
 					</li>
 				</ul>
 			</div>

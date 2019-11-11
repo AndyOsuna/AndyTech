@@ -70,3 +70,15 @@ table.table-carrito td {
 table.table-carrito td .cart-img {
   height: 80px;
 }
+footer .nav .nav-item {
+  font-size: 64px;
+}
+footer .nav .nav-item .ig {
+  color:#cb09fc;
+}
+footer .nav .nav-item .tt {
+  color: rgb(77, 77, 243);
+}
+footer .nav .nav-item .yt {
+  color: red;
+}

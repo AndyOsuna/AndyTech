@@ -20,8 +20,8 @@ for ($i = 0; $i < count($_SESSION['carrito']); $i++) {
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="css/solid.min.css">
-	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/all.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/bootswatch-sandstone.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<title>AndyTech</title>

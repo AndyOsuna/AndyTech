@@ -1,6 +1,9 @@
 <?php
 include './db.php';
 include './includes/header.php';
+
+$productos = Product::getProducts($mysql);
+
 ?>
 
 <div class="jumbotron bg-white">
