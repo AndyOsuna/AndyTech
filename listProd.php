@@ -10,10 +10,6 @@ if (isset($_SESSION['login'])) {
 	$user = $user->fetch_object();
 }
 
-if (isset($_GET['search'])) {
-	echo $_GET['search'];
-}
-
 include 'includes/header.php';
 ?>
 <div class="container-fluid py-3">
@@ -31,9 +27,9 @@ include 'includes/header.php';
 			<?php unset($_SESSION['error']);
 			} ?>
 			<p class="h1 text-center">Productos</p>
-			<!-- <div class="form-inline">
+			<div class="form-inline">
 				<input type="text" id="search" class="search form-control text-center rounded-pill mb-3 mx-auto" placeholder="Buscá lo que quieras" />
-			</div> -->
+			</div>
 		</div>
 		<div class="products">
 			<!-- <div class="row"> -->
@@ -67,16 +63,7 @@ include 'includes/header.php';
 	</div>
 </div>
 
-<script>
-	searchUI = document.querySelector('#search');
-
-	searchUI.addEventListener('keyup', e => {
-		console.log(searchUI.value);
-		fetch('listProd.php?search=' + searchUI.value)
-			.then(() => console.log("enviado"))
-
-	})
-</script>
+<script src="js/buscar-productos.js"></script>
 
 <?php
 include 'includes/footer.php';
