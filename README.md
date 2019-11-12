@@ -1,4 +1,4 @@
-Proyecto para escuela E.E.T. N°3 Tte. Luís Cenobio Candelaria
+Proyecto para escuela E.E.T. N°3 Tte. Luís Cenobio Candelaria, Entre Ríos, Argentina
 
 # AndyTech: Tienda electrónica
 
