@@ -5,6 +5,7 @@
 				<p class="h3">Quienes somos?</p>
 				<p>Somos una startup con el objetivo de acercar la tecnología a todos los argentinos, nuestra querida casa.</p>
 				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis officia id quas illum est repudiandae tenetur similique, fugiat distinctio ab.</p>
+				<a href="questions.php" class="btn btn-link">Envianos tus consultas</a>
 			</div>
 			<div class="col-md-2"></div>
 			<div class="col-md-4">

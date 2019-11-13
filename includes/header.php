@@ -6,9 +6,11 @@ if (isset($_SESSION['login'])) {
 }
 
 $cart = 0;
-for ($i = 0; $i < count($_SESSION['carrito']); $i++) {
-	for ($j = 0; $j < $_SESSION['carrito'][$i]["cant"]; $j++) {
-		$cart++;
+if (isset($_SESSION['carrito'])) {
+	for ($i = 0; $i < count($_SESSION['carrito']); $i++) {
+		for ($j = 0; $j < $_SESSION['carrito'][$i]["cant"]; $j++) {
+			$cart++;
+		}
 	}
 }
 ?>
