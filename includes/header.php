@@ -47,10 +47,10 @@ if (isset($_SESSION['carrito'])) {
 
 				<?php if (isset($user) && $user->isAdmin) { ?>
 					<div class="nav-item">
-						<a href="addProd.php" class="nav-link">Añadir productos</a>
+						<a href="addProd.php" class="nav-link">Añadir prod.</a>
 					</div>
 					<div class="nav-item">
-						<a href="addCat.php" class="nav-link">Añadir categoría</a>
+						<a href="addCat.php" class="nav-link">Añadir cat.</a>
 					</div>
 				<?php } ?>
 
